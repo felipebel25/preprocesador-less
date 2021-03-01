@@ -1,0 +1,161 @@
+.sombra-caja {
+  box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.5);
+}
+.Oswald {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #333333;
+  line-height: 28px;
+  background-color: #333333;
+}
+body .intro {
+  background-color: #8841da;
+}
+body .articulo--principal {
+  color: #FFFFFF;
+}
+body .articulo--principal h1,
+body .articulo--principal h2,
+body .articulo--principal h3 {
+  color: #8841da;
+}
+body .caja__contenido {
+  background-color: #8841da;
+  color: #FFFFFF;
+}
+body .caja__contenido a {
+  color: #FFFFFF;
+}
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 500px) {
+  .intro {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+  }
+  .intro__imagen {
+    width: 100%;
+    height: 99%;
+    position: absolute;
+  }
+  .intro__imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .intro__contenido {
+    width: 70%;
+    margin: 0 20%;
+    position: absolute;
+    top: 4.2rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .intro__categoria {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-right: 5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .intro__titulo {
+    width: 90%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 46px;
+  }
+  .intro__autor {
+    width: 18rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 28rem;
+    left: 0;
+    right: 0;
+    color: #FFFFFF;
+  }
+  .intro__autor img {
+    width: 9rem;
+    height: 7rem;
+    float: left;
+    padding-right: 1rem;
+    border-radius: 10em;
+  }
+  .intro__autor span {
+    display: inline-block;
+    font-size: 1.8rem;
+  }
+  .intro__autor-titulo {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .articulo--principal {
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+  }
+  .articulo--principal__intro {
+    font-size: 21px;
+  }
+  .articulo--principal h2 {
+    margin: 3rem 0 3rem 0;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .articulo--principal h3 {
+    color: #8841da;
+  }
+  .contenedor--cajas {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .caja {
+    max-width: 100%;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.5);
+  }
+  .caja__contenido {
+    padding: 2.5rem;
+    background-color: #FFFFFF;
+  }
+  .caja__imagen img {
+    width: 100%;
+  }
+  .caja span {
+    color: #8841da;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .caja a {
+    text-decoration: none;
+    color: #012179;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

@@ -1,3 +1,11 @@
+.sombra-caja {
+  box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.5);
+}
+.Oswald {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 * {
   box-sizing: border-box;
 }
@@ -5,6 +13,26 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   color: #333333;
+  line-height: 28px;
+  background-color: #333333;
+}
+body .intro {
+  background-color: #8841da;
+}
+body .articulo--principal {
+  color: #FFFFFF;
+}
+body .articulo--principal h1,
+body .articulo--principal h2,
+body .articulo--principal h3 {
+  color: #8841da;
+}
+body .caja__contenido {
+  background-color: #8841da;
+  color: #FFFFFF;
+}
+body .caja__contenido a {
+  color: #FFFFFF;
 }
 html {
   font-size: 62.5%;
@@ -12,20 +40,23 @@ html {
 h1,
 h2,
 h3 {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
   margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .intro {
   width: 134rem;
   height: 65rem;
-  padding: 1rem;
+  padding: 1rem 0 1rem 0;
   margin: 0 auto;
   position: relative;
+  background-color: #FFFFFF;
+  box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.5);
 }
 .intro__imagen {
-  width: 100%;
-  height: 100%;
+  width: 98%;
+  height: 97%;
   position: absolute;
 }
 .intro__imagen img {
@@ -43,14 +74,18 @@ h3 {
   text-align: center;
   color: #FFFFFF;
 }
-.introcategoria {
+.intro__categoria {
   font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.5);
 }
 .intro__titulo {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   font-size: 5rem;
+  line-height: 56px;
 }
 .intro__autor {
   width: 18rem;
@@ -72,10 +107,16 @@ h3 {
   display: inline-block;
   font-size: 1.8rem;
 }
+.intro__autor-titulo {
+  color: rgba(255, 255, 255, 0.5);
+}
 .articulo--principal {
   max-width: 660px;
   margin: 0 auto;
   font-size: 1.6rem;
+}
+.articulo--principal__intro {
+  font-size: 26px;
 }
 .articulo--principal h2 {
   margin: 4rem 0 4rem 0;
@@ -85,3 +126,33 @@ h3 {
 .articulo--principal h3 {
   color: #8841da;
 }
+.contenedor--cajas {
+  width: 140rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.caja {
+  max-width: 43rem;
+  font-size: 1.6rem;
+  box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.5);
+}
+.caja__contenido {
+  padding: 2.5rem;
+  background-color: #FFFFFF;
+}
+.caja span {
+  color: #8841da;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.caja a {
+  text-decoration: none;
+  color: #012179;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@import "../cssmobile/mobile.less";
